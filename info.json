@@ -1,12 +1,11 @@
 {
   "categories" : [
-    "Utilities"
+    "Information"
   ],
-  "displayName" : "Say Something",
+  "displayName" : "Harvard Shuttle",
   "name" : "harvard-shuttle",
-  "description" : "This is an example plugin",
+  "description" : "Display information about the Harvard Shuttle Service",
   "examples" : [
-    "say hello world",
-    "say good morning"
+    "FOOBAR"
   ]
 }
