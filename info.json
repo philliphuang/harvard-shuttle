@@ -6,6 +6,8 @@
   "name" : "harvard-shuttle",
   "description" : "Display information about the Harvard Shuttle Service",
   "examples" : [
-    "FOOBAR"
+    "shuttle Mather House to Maxwell Dworkin",
+    "Widener Gate to Quad"
+    "Mather to MD"
   ]
 }

@@ -1,3 +1,2 @@
-say ~message(Good Morning)
-speak ~message(Hello, world)
-please speak ~message(what's up) out loud
+shuttle ~origin(Mather) to ~destination(Maxwell Dworkin)
+~origin(Lamont) to ~destination(Quad)

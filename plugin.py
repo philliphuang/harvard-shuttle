@@ -9,4 +9,3 @@ def results(fields, original_query):
 def run(message):
   import os, pipes
   os.system('say "{0}"'.format(pipes.quote(message.encode('utf8'))))
-
