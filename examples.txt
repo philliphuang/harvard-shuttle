@@ -1,2 +1,1 @@
-shuttle ~origin(Mather) to ~destination(Maxwell Dworkin)
-~origin(Lamont) to ~destination(Quad)
+shuttle
