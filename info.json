@@ -6,6 +6,7 @@
   "name" : "harvard-shuttle",
   "description" : "Display information about the Harvard Shuttle Service",
   "examples" : [
-    "shuttle"
+    "shuttle",
+    "mather"
   ]
 }
