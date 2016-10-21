@@ -1,17 +1,36 @@
 import json
 
 def results(parsed, original_query):
-    # target = parsed.values()[0]
-    # print target
-    # if target in ('mather', 'Mather', 'Mather Shuttle'):
-    #     url = 'http://harvard.transloc.com/m/stop/code/113'
-    # else:
-    if original_query == 'mather':
+    try:
+        target = parsed['~target']
+    except KeyError:
+        target = 0
+
+    # mather
+    if target in ('m', 'mather', 'Mather'):
         url = 'http://harvard.transloc.com/m/stop/code/113'
         title = 'Harvard Shuttle - Mather'
+
+    # lamont
+    elif target in ('l', 'lamont', 'Lamont'):
+        url = 'http://harvard.transloc.com/m/stop/code/109'
+        title = 'Harvard Shuttle - Lamont'
+
+    # quad
+    elif target in ('q', 'quad', 'Quad'):
+        url = 'http://harvard.transloc.com/m/stop/code/101'
+        title = 'Harvard Shuttle - Quad'
+
+    # # maxwell dworkin
+    # elif target in ('md', 'MD', 'Maxwell', 'Maxwell Dworkin', 'Dworkin'):
+    #     url = 'http://harvard.transloc.com/m/stop/code/101'
+    #     title = 'Harvard Shuttle - Quad'
+
+    # general
     else:
         url = 'http://harvard.transloc.com/m/'
         title = 'Harvard Shuttle'
+
     return {
         "title": title,
         "html": "<script>window.location=%s</script>" % json.dumps(url),
