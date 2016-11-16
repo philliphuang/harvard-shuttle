@@ -21,10 +21,12 @@ def results(parsed, original_query):
         url = 'http://harvard.transloc.com/m/stop/code/101'
         title = 'Harvard Shuttle - Quad'
 
-    # # maxwell dworkin
-    # elif target in ('md', 'maxwell', 'maxwell dworkin', 'dworkin'):
-    #     url = 'http://harvard.transloc.com/m/stop/code/101'
-    #     title = 'Harvard Shuttle - Quad'
+    # maxwell dworkin
+    elif target in ('md', 'maxwell', 'maxwell dworkin', 'dworkin'):
+        url = 'http://harvard.transloc.com/m/stop/code/107'
+        title = 'Harvard Shuttle - Quad'
+
+    # TODO: annenberg
 
     # general
     else:
