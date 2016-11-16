@@ -2,27 +2,27 @@ import json
 
 def results(parsed, original_query):
     try:
-        target = parsed['~target']
+        target = parsed['~target'].lower()
     except KeyError:
         target = 0
 
     # mather
-    if target in ('m', 'mather', 'Mather'):
+    if target in ('m', 'mather'):
         url = 'http://harvard.transloc.com/m/stop/code/113'
         title = 'Harvard Shuttle - Mather'
 
     # lamont
-    elif target in ('l', 'lamont', 'Lamont'):
+    elif target in ('l', 'lamont'):
         url = 'http://harvard.transloc.com/m/stop/code/109'
         title = 'Harvard Shuttle - Lamont'
 
     # quad
-    elif target in ('q', 'quad', 'Quad'):
+    elif target in ('q', 'quad'):
         url = 'http://harvard.transloc.com/m/stop/code/101'
         title = 'Harvard Shuttle - Quad'
 
     # # maxwell dworkin
-    # elif target in ('md', 'MD', 'Maxwell', 'Maxwell Dworkin', 'Dworkin'):
+    # elif target in ('md', 'maxwell', 'maxwell dworkin', 'dworkin'):
     #     url = 'http://harvard.transloc.com/m/stop/code/101'
     #     title = 'Harvard Shuttle - Quad'
 
